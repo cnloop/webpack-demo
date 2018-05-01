@@ -4,7 +4,14 @@
 
 ## 1. 官方配置
 
-搭建需要注意*开发环境(development)*和*生产环境(production)*的构建目标差异很大。
+```shell
+npm install --save-dev webpack
+npm install --save-dev webpack-cli
+```
+
+对于大多数项目，我们建议本地安装。这可以使我们在引入破坏式变更(breaking change)的依赖时，更容易分别升级项目。通常，webpack 通过运行一个或多个 [npm scripts](https://docs.npmjs.com/misc/scripts)，会在本地 `node_modules` 目录中查找安装的 webpack
+
+开发和最后生产不不一样的，*开发环境(development)*和*生产环境(production)*的构建目标差异很大
 
 参考地址：[地址](https://doc.webpack-china.org/concepts/)
 
